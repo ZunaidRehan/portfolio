@@ -1,0 +1,39 @@
+.educationWrap {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.paragraph {
+    width: 45%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+svg.speedometer {
+    height: 180px !important;
+    margin-top: 10px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px) {
+    .paragraph {
+        width: 100%;
+    }
+
+    .dFlex {
+        flex-wrap: wrap;
+    }
+
+    .biodata {
+        flex-wrap: wrap;
+    }
+
+    .biodata a {
+        margin-bottom: 10px;
+    }
+}

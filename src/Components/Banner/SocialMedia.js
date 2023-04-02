@@ -9,7 +9,8 @@ export const SocialMedia = () => {
                 <a href="https://www.linkedin.com/in/zunaid-alam-530767128/" target="_blank" class="linkedin"><i class="fa fa-linkedin "></i></a>
             </div>
             <div className='biodata'>
-                <a href="./../../images/Zunaid.pdf" download>Biodata</a>
+                <a href="https://github.com/ZunaidRehan/portfolio/raw/master/src/images/Zunaid.pdf" download><span class="bioText"> Biodata </span></a>
+                <a className='resume' href="https://github.com/ZunaidRehan/portfolio/raw/master/src/images/Zunaid%20Resume.pdf" download><span class="bioText"> Resume </span></a>
             </div>
         </>
     )

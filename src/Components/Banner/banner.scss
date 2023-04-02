@@ -4,9 +4,11 @@
   align-items: center;
   padding: 15px;
 }
+
 .name {
   font-size: 60px;
   position: relative;
+
   .dot {
     width: 0px;
     height: 0px;
@@ -25,6 +27,7 @@
     right: -12px;
   }
 }
+
 @keyframes popIn {
   0% {
     width: 0px;
@@ -33,6 +36,7 @@
     border: 0px solid #ddd;
     opacity: 0;
   }
+
   50% {
     width: 10px;
     height: 10px;
@@ -40,16 +44,19 @@
     opacity: 1;
     bottom: 45px;
   }
+
   65% {
     width: 7px;
     height: 7px;
     bottom: 0px;
   }
+
   80% {
     width: 10px;
     height: 10px;
     bottom: 20px;
   }
+
   100% {
     width: 10px;
     height: 10px;
@@ -64,6 +71,7 @@
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
   line-height: 0.75;
@@ -79,6 +87,7 @@
   text-align: right;
   font-size: 25px;
 }
+
 .word {
   font-family: "Anton", sans-serif;
   perspective: 1000px;
@@ -95,21 +104,94 @@
   animation: balance 3s ease-out infinite;
   transform-origin: bottom left;
 }
+
 .biodata {
-  text-align: center;
+  justify-content: space-around;
+  display: flex;
   margin-top: 30px;
+
+  a {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
 }
 
-.biodata a {
-  text-decoration: none;
-  padding: 10px 50px;
+.biodata a:before {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  transition: all .5s ease;
   background: red;
   border-radius: 10px;
-  font-weight: bold;
-  color: #fff;
+}
+
+span.bioText {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  transition: all .5s ease;
+  background: -webkit-linear-gradient(45deg, #07130a, #f9effb 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.biodata a:after {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f00;
+  content: "";
+  position: absolute;
+  top: 10px;
+  pointer-events: none;
+  right: -15px;
+  transition: all .5s ease;
+  border-radius: 10px;
+}
+
+.biodata a.resume:before {
+  background-color: blue;
+}
+
+.biodata a.resume:after {
+  border-color: blue
+}
+
+.biodata a:hover span.bioText {
+  transform: translate(12px, 12px);
+}
+
+.biodata a:hover::before {
+  top: 11px;
+  left: 14px;
+}
+
+
+.skills .paragraph:hover {
+  transform: scale(1.2);
+  transition: .3s ease-in-out;
+}
+
+.skills .paragraph:hover .tag {
+  background: -webkit-linear-gradient(45deg, red, purple 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .3s ease-in-out;
+
 }
 
 @keyframes balance {
+
   0%,
   100% {
     transform: rotate(0deg);
@@ -127,6 +209,7 @@
 }
 
 @keyframes balance1 {
+
   0%,
   100% {
     transform: rotate(0deg);
@@ -141,6 +224,7 @@
 .moreDesc {
   margin-top: 30px;
   font-size: 23px;
+
   span.developer {
     color: purple;
     font-weight: bold;
@@ -151,6 +235,7 @@
     font-weight: bold;
   }
 }
+
 /* ============================ Social Shares ================= */
 
 .socialShares {
@@ -158,6 +243,7 @@
   width: 100%;
   justify-content: center;
   margin-top: 10px;
+
   a {
     margin: 10px;
     box-sizing: border-box;
@@ -172,9 +258,11 @@
     line-height: 1px;
     padding-top: 11px;
     transition: all 0.5s;
+
     &:hover {
       transform: rotate(360deg) scale(1.5);
     }
+
     &.facebook {
       font-size: 22px;
       padding-top: 9px;
@@ -182,10 +270,12 @@
       background-color: #3b5998;
       color: #ffffff;
     }
+
     &.facebook:hover {
       background-color: #ffffff;
       color: #3b5998;
     }
+
     &.linkedin {
       font-size: 24px;
       padding-top: 8px;
@@ -194,10 +284,12 @@
       color: #ffffff;
       border-color: #0976b4;
     }
+
     &.linkedin:hover {
       background-color: #ffffff;
       color: #0976b4;
     }
+
     &.instagram {
       font-size: 22px;
       padding-top: 9px;
@@ -205,6 +297,7 @@
       color: #ffffff;
       border-color: #cb2027;
     }
+
     &.instagram:hover {
       background-color: #ffffff;
       color: #cb2027;
@@ -215,28 +308,35 @@
 // Medai Query
 
 @media (max-width: 1200px) {
+
   .name,
   .discription {
     text-align: center;
   }
+
   .dot {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .name {
     font-size: 7vw;
   }
+
   .discription {
     font-size: 4vw;
   }
+
   .myImage img {
     width: 100%;
   }
+
   .moreDesc {
     font-size: 3vw;
     text-align: center;
   }
+
   .socialShares a {
     height: 30px;
     width: 30px;

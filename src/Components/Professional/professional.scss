@@ -9,3 +9,58 @@
     border-bottom: 5px solid;
     display: inline-block;
 }
+
+.dFlex {
+    display: flex;
+}
+
+svg.CircularProgressbar {
+    width: 120px;
+    transition: all .5s ease-in-out;
+    transform: rotate(0deg);
+
+}
+
+.paragraph:hover svg.CircularProgressbar {
+    transform: rotate(360deg);
+}
+
+
+
+.tag {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 45px;
+    background: -webkit-linear-gradient(45deg, #00ff95, #09009f 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .3s ease-in-out;
+}
+
+h4 {
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paragraph p {
+    margin: 0;
+    background: -webkit-linear-gradient(45deg, #de2511, #101110 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.paragraph p:hover {
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
