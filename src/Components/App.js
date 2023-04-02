@@ -2,6 +2,7 @@
 import './../App.scss';
 import { Banner } from './Banner/Banner';
 import { Educational } from './Educational/Educational';
+import FamilyTree from './Family/FamilyTree';
 import { Professional } from './Professional/Professional';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Banner />
       <Professional />
       <Educational />
+      <FamilyTree />
     </div>
   );
 }
