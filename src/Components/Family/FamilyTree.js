@@ -222,7 +222,7 @@ export default class FamilyTree extends React.Component {
                     "id": "e2e29594-02b7-4374-a3e0-a9ac70103f68",
                     "data": {
                         "gender": "M",
-                        "first name": "Iftikhal",
+                        "first name": "Iftikhar",
                         "last name": "Alam",
                         "birthday": "",
                         "avatar": ""

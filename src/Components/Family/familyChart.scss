@@ -87,3 +87,18 @@
     -webkit-transform: translateY(-8px) scale(0.8);
     transform: translateY(-8px) scale(0.8);
   }
+  @media (max-width: 992px) {
+    .f3{
+      width: 90vw;
+    }
+  }
+  @media (max-width: 768px) {
+    .f3{
+      width: 85vw;
+    }
+  }
+  @media (max-width: 420px) {
+    .f3{
+      width: 75vw;
+    }
+  }

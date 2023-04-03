@@ -1,0 +1,17 @@
+.photoGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imageWrapper {
+    flex-wrap: wrap;
+    width: 250px;
+    margin: 10px 25px;
+}
+
+.imageWrapper img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: contain;
+}
