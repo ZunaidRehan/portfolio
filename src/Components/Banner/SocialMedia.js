@@ -10,7 +10,7 @@ export const SocialMedia = () => {
             </div>
             <div className='biodata'>
                 <a href="https://github.com/ZunaidRehan/portfolio/raw/master/src/images/Zunaid.pdf" download><span class="bioText"> Biodata </span></a>
-                <a className='resume' href="https://github.com/ZunaidRehan/portfolio/raw/master/src/images/Zunaid%20Resume.pdf" download><span class="bioText"> Resume </span></a>
+                {/* <a className='resume' href="https://github.com/ZunaidRehan/portfolio/raw/master/src/images/Zunaid%20Resume.pdf" download><span class="bioText"> Resume </span></a> */}
             </div>
         </>
     )
